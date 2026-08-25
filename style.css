@@ -1,18 +1,99 @@
-header,nav,ul{
-    display: flex;
-    align-items: center;
+*{
+   overflow-x: hidden;
 }
-header{
-    padding: 20px 80px;
-    justify-content: space-between;
+
+header,
+nav,
+ul {
+   display: flex;
+   align-items: center;
+   background-color: #7484b8;
+   padding: 5px 10px;
+   border-radius: 25px;
 }
-nav ul{
-    background-color: yellow;
+
+header {
+   justify-content: space-between;
+   padding: 10px 10%;
+}
+
+header nav ul {
+   list-style: none;
+   gap: 15px;
+}
+
+header nav ul li a {
+   text-decoration: none;
+}
+
+header nav {
+   gap: 15px;
+}
+.hero-section {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   min-height: calc(100vh - 310px);
+   padding: 4rem 10%;
+   gap: 10px;
+}
+
+.hero-left img {
+   display: flex;
+   flex: 1;
+   background: white;
+   border-radius: 50%;
+   box-shadow: 0 2px 3px;
+   animation: mvt ease-in-out 3s infinite alternate;
+}
+
+@keyframes mvt {
+   0% {
+      transform: translateY(0);
+   }
+
+   100% {
+      transform: translateY(-15%);
+   }
+}
+
+#contactme {
+   animation: super 2s infinite alternate;
+}
+
+@keyframes super {
+   0% {
+      transform: translateX(10px);
+   }
+
+   100% {
+      transform: translateY(25px);
+   }
+}
+
+button{
+   padding: 10px 20px;
+   border-radius: 10px;
+   border: none;
+   background-color: skyblue;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   box-shadow: inset 7px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.list-project{
+   display:flex;
+}
+.icone{
+   animation:displacement ease-in 3s infinite;
+}
+/* simple animatin */
+@keyframes displacement{
+   0%{
+         transform: translateX(50%);
+   }
+      
    
-    gap: 11px;
-    list-style:none;
-}
-nav ul li a{
-    padding-right: 20px;
-    text-decoration: none ;
+   100%{
+      transform: translateX(-50%);
+   }
 }
