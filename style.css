@@ -1,5 +1,8 @@
 *{
-   overflow-x: hidden;
+   /* overflow-x: hidden; */
+}
+body{
+   background-image:url(image/IMG_20251203_105639-800x600.jpg) ;
 }
 
 header,
@@ -39,8 +42,6 @@ header nav {
 }
 
 .hero-left img {
-   display: flex;
-   flex: 1;
    background: white;
    border-radius: 50%;
    box-shadow: 0 2px 3px;
@@ -89,11 +90,22 @@ button{
 /* simple animatin */
 @keyframes displacement{
    0%{
-         transform: translateX(50%);
+         transform: translateX(80%);
    }
       
    
    100%{
-      transform: translateX(-50%);
+      transform: translateX(-20%);
+   }
+}
+
+/* responsive disign */
+@media(max-width: 700px){
+   .navbar{
+    display:none;  
+   }
+
+   .hero-section{
+      flex-direction: column;
    }
 }
