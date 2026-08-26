@@ -79,6 +79,9 @@ button{
 }
 .list-project{
    display:flex;
+   img{
+      border-radius:  10%;
+   }
 }
 .icone{
    animation:displacement ease-in 3s infinite;
